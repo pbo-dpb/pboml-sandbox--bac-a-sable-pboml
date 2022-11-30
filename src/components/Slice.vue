@@ -1,5 +1,5 @@
 <template>
-    <figure class="border-2 border-sky-900 rounded">
+    <figure class="border-2 border-sky-900 rounded shadow">
 
         <figcaption class="flex flex-col p-4 bg-sky-900 text-white">
             <h3 class="text-2xl font-thin">{{ slice.name.en }}</h3>
