@@ -1,0 +1,10 @@
+[
+    {
+        "name": {"en":"Markdown", "fr":"Markdown"},
+        "description": {
+            "en": "A block of text formatted with the markdown language.",
+            "fr": "Un bloc de texte formaté avec le langage markdown."
+        },
+        "payload": "markdown.yaml"
+    }
+]

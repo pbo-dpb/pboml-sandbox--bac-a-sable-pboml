@@ -19,6 +19,7 @@ export default {
     methods: {
         buildEditor() {
             var editor = window.ace.edit(this.$refs.editor);
+            editor.session.setUseWrapMode(true);
             if (this.mode)
                 editor.session.setMode("ace/mode/" + this.mode);
             if (this.mode === 'yaml')

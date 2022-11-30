@@ -1,0 +1,13 @@
+pboml:
+    version: 1.0.0
+slices:
+    -
+        type: markdown
+        readonly: false
+        display_label: true
+        label:
+            en: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+            fr: Nunc vehicula libero quis lacinia viverra
+        content:
+            en: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu ligula fringilla, pellentesque odio ut, condimentum libero. Nulla quis mollis metus, at dignissim mi. Nullam fringilla nunc vel ligula placerat egestas. Fusce fermentum dui erat, et elementum nisl sodales posuere. Nam eget semper velit. Vivamus vel tortor ac odio laoreet finibus ut at justo. Proin tincidunt ex sed sodales ullamcorper. Donec eu metus sollicitudin turpis rhoncus lobortis. Nam consequat accumsan orci molestie vehicula. Phasellus efficitur eu neque ac lobortis. Cras porttitor auctor metus, sit amet faucibus risus pharetra eget. Duis felis mauris, imperdiet quis arcu nec, molestie blandit turpis. Sed tincidunt quam a turpis hendrerit maximus."
+            fr: "Praesent efficitur iaculis scelerisque. Fusce vitae risus justo. Integer ultricies nulla in ex blandit vestibulum. Integer aliquet fringilla arcu venenatis interdum. Sed accumsan luctus purus, porttitor hendrerit lorem porttitor ut. Nam in blandit nulla. Aenean at elit vel nunc rhoncus sodales. Nunc arcu est, ultrices non luctus eu, rhoncus eu velit. Pellentesque blandit tincidunt mi, in blandit tortor interdum eu. Aenean consequat tempor aliquet. Proin laoreet magna justo, non semper purus pharetra porta. Vestibulum dignissim lectus eu nulla fringilla luctus. Sed semper facilisis tortor, id rutrum velit euismod sed."

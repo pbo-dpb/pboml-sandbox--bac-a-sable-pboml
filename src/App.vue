@@ -1,20 +1,27 @@
 <template>
   <div>
-    <code-editor mode="yaml" v-model="rawContent"></code-editor>
+
+    <Slice v-for="slice in slices" :slice="slice"></Slice>
 
   </div>
 </template>
 <script>
-import CodeEditor from "./components/CodeEditor.vue"
+import Slice from "./components/Slice.vue"
+import index from '../assets/index.json?json'
 
 export default {
   data() {
     return {
-      rawContent: 'Hello, world'
+
     }
   },
   components: {
-    CodeEditor
+    Slice
+  },
+  computed: {
+    slices() {
+      return index;
+    }
   }
 }
 </script>
