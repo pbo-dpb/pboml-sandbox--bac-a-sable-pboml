@@ -1,9 +1,7 @@
 pboml:
     version: 1.0.0
 slices:
-    -
-        type: markdown
-        readonly: false
+    -   type: markdown
         display_label: true
         label:
             en: Lorem ipsum dolor sit amet, consectetur adipiscing elit

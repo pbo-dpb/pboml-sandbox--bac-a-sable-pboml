@@ -1,0 +1,53 @@
+pboml:
+    version: 1.0.0
+
+slices:
+    -   type: table
+        label:
+            en: 'Cost of Proposed Measure'
+            fr: 'Coût de la mesure proposée'
+        display_label: true
+        variables:
+            fiscalyear:
+                label:
+                    en: 'Fiscal Year'
+                    fr: 'Année fiscale'
+                type: markdown
+                display_label: false
+            totalcost:
+                label:
+                    en: 'Total cost'
+                    fr: 'Coût total'
+                type: number
+                display_label: true
+        content:
+            -
+                fiscalyear:
+                    en: 2020-21
+                    fr: 2020-2021
+                totalcost: -7574
+            -
+                fiscalyear:
+                    en: 2021-22
+                    fr: 2021-2022
+                totalcost: -30874
+            -
+                fiscalyear:
+                    en: 2022-23
+                    fr: 2022-2023
+                totalcost: -33236
+            -
+                fiscalyear:
+                    en: 2023-24
+                    fr: 2023-2024
+                totalcost: -35784
+            -
+                fiscalyear:
+                    en: 2025-26
+                    fr: 2025-2026
+                totalcost: -38532
+            -
+                fiscalyear:
+                    en: Total
+                    fr: Total
+                totalcost: -146000

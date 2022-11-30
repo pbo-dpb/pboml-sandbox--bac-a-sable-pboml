@@ -1,0 +1,23 @@
+pboml:
+    version: 1.0.0
+slices:
+    - type: graph
+      display_label: true
+      label:
+        en: Cumulative Public Debt Charges from a $1 Billion/Year Spending Increase for 5 Years
+        fr: Charges cumulées de la dette publique résultant d'une augmentation des dépenses d'un milliard de dollars par an pendant 5 ans
+      chart_type: line
+      is_figure: 123
+      axes:
+        y:
+          label: _cumulative_debt_charges_
+      datatable: [["Fiscal Year","_previous_projection_", "_new_projection_"], ["2023-2024", 22.5, 46.8], ["2024-2025", 71.7, 130.7],["2025-2026", 150.3, 239.5],["2026-2027", 257.5, 371.8], ["2027-2028", 394.0, 535.3]] 
+      strings:
+        en:
+          _cumulative_debt_charges_: Cumulative Debt Charges ($ Million)
+          _previous_projection_: Previous Projection  (Mar. 2022)
+          _new_projection_: New Projection (Oct. 2022)
+        fr:
+          _cumulative_debt_charges_: Charges de la dette cumulées (millions de dollars)
+          _previous_projection_: Projection précédente (mars 2022)
+          _new_projection_: Nouvelle projection (oct. 2022)

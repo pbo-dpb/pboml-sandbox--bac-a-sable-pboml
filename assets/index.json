@@ -6,5 +6,36 @@
             "fr": "Un bloc de texte formaté avec le langage markdown."
         },
         "payload": "markdown.yaml"
+    },
+
+    {
+        "name": {"en":"Table", "fr":"Tableau"},
+        "description": {
+            "en": "A simple table with no merged cells.",
+            "fr": "Un tableau simple sans cellules fusionnées."
+        },
+        "payload": "table.yaml"
+    },
+
+    {
+        "name": {
+            "en":"Key-Value List", "fr":"Liste clé-valeur"
+        },
+        "description": {
+            "en": "A list of associative items.",
+            "fr": "Une liste d'éléments associatifs."
+        },
+        "payload": "kvlist.yaml"
+    },
+
+    {
+        "name": {
+            "en":"Graph", "fr":"Graphique"
+        },
+        "description": {
+            "en": "Visual representation of tabular data.",
+            "fr": "La représentation visuelle de données tabulaires."
+        },
+        "payload": "graph.yaml"
     }
 ]
