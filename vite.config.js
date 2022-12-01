@@ -11,5 +11,7 @@ export default defineConfig({
     }
   })],
   assetsInclude: ['**/*.yaml'],
-
+  build: {
+    target: "esnext"
+  }
 })
