@@ -1,22 +1,7 @@
 pboml:
     version: 1.0.0
-document:
-    form: EPC_2021
-    version: 1.0.0
-    id: LEG-2223-007-X
-    release_date: 2022-09-15T09:00:00-04:00
-    title:
-        en: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
-        fr: 'Nullam maximus neque ut nibh interdum'
-    type:
-        en: 'Cost Estimate of Election Campaign Proposal'
-        fr: "Estimation du coût d'une promesse électorale"
-    copyright:
-        en: '© Office of the Parliamentary Budget Officer, Ottawa, Canada, 2021'
-        fr: '© Bureau du directeur parlementaire du budget, Ottawa, Canada, 2021'
 slices:
-    -
-        type: kvlist
+    -   type: kvlist
         display_label: true
         label:
             en: 'Data Sources'
@@ -51,30 +36,3 @@ slices:
                     content:
                         en: 'Bank of Canada, Investment Industry Regulatory Organization of Canada'
                         fr: 'Banque du Canada, Organisme canadien de réglementation du commerce des valeurs mobilières'
-            -
-                key:
-                    content:
-                        en: 'Money market transactions'
-                        fr: 'Transactions sur les marchés monétaires'
-                value:
-                    content:
-                        en: 'Bank of Canada, Investment Industry Regulatory Organization of Canada'
-                        fr: 'Banque du Canada, Organisme canadien de réglementation du commerce des valeurs mobilières'
-            -
-                key:
-                    content:
-                        en: 'Derivative transactions'
-                        fr: 'Transactions sur des produits dérivés'
-                value:
-                    content:
-                        en: 'Bank for International Settlements, Depository Trust and Clearing Corporation'
-                        fr: 'Banque des règlements internationaux, Depository Trust and Clearing Corporation'
-            -
-                key:
-                    content:
-                        en: 'Foreign exchange transactions'
-                        fr: 'Transactions en devises étrangères'
-                value:
-                    content:
-                        en: 'Bank for International Settlements, Depository Trust and Clearing Corporation'
-                        fr: 'Comité canadien du marché des changes'
