@@ -7,14 +7,15 @@
         </figcaption>
 
 
-        <div v-if="payload" class="grid grid-cols-3">
+        <div v-if="slicePayload" class="grid grid-cols-3">
 
             <div class="bg-sky-100  p-4 border-r-2 border-sky-900">
-                <CodeEditor v-model="payload" mode="yaml"></CodeEditor>
+                <CodeEditor v-model="slicePayload" mode="yaml"></CodeEditor>
             </div>
 
             <div class="col-span-2 p-4">
-                <SliceRenderer ref="renderer" :payload="payload"></SliceRenderer>
+                <SliceRenderer v-if="stringifiedPayload" :payload="stringifiedPayload"></SliceRenderer>
+                <pre v-if="error" class="text-red-800">{{ error }}</pre>
             </div>
 
         </div>
@@ -23,6 +24,7 @@
 <script>
 import CodeEditor from "./CodeEditor.vue"
 import SliceRenderer from "./SliceRenderer.vue"
+import yaml from 'js-yaml'
 
 export default {
     props: {
@@ -30,7 +32,9 @@ export default {
     },
     data() {
         return {
-            payload: null
+            payload: null,
+            slicePayload: null,
+            error: null
         }
     },
     components: {
@@ -41,8 +45,33 @@ export default {
 
         fetch(`/${this.slice.payload}`)
             .then((response) => response.text())
-            .then((data) => this.payload = data);
+            .then((data) => {
+                try {
+                    const doc = yaml.load(data);
+                    this.slicePayload = yaml.dump(doc.slices[0]);
+                    this.payload = doc
+                } catch (e) {
+                    console.log(e);
+                }
+
+
+            });
     },
+
+    computed: {
+        stringifiedPayload() {
+            this.error = null;
+            try {
+                const slice = yaml.load(this.slicePayload);
+                this.payload.slices = [slice];
+                return yaml.dump(this.payload);
+            } catch (e) {
+                this.error = e.message;
+                console.log(e);
+            }
+        },
+
+    }
 
 
 }
