@@ -2,7 +2,7 @@ import { createApp } from 'vue'
 import './style.css'
 import App from './App.vue'
 
-const pbomlDomain = "https://pboml-parser--parseur-pboml.s3.ca-central-1.amazonaws.com/"
+const pbomlDomain = "https://pboml.opbo-bdpb.ca/"
 async function fetchPbomlParserScriptUrl() {
     const response = await fetch(`${pbomlDomain}manifest.json`);
     const payload = await response.json();
