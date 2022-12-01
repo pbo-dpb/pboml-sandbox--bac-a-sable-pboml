@@ -2,8 +2,6 @@ import { createApp } from 'vue'
 import './style.css'
 import App from './App.vue'
 
-// <script type="module" crossorigin src=""></script>
-
 const pbomlDomain = "https://pboml-parser--parseur-pboml.s3.ca-central-1.amazonaws.com/"
 async function fetchPbomlParserScriptUrl() {
     const response = await fetch(`${pbomlDomain}manifest.json`);
