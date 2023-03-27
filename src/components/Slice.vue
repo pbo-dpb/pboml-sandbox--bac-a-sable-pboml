@@ -1,15 +1,15 @@
 <template>
-    <figure class="border-2 border-sky-900 rounded shadow">
+    <figure class="border-2 border-gray-300 rounded shadow" :id="slice.payload">
 
-        <figcaption class="flex flex-col p-4 bg-sky-900 text-white">
+        <figcaption class="flex flex-col p-4 bg-gray-300 text-gray-900">
             <h3 class="text-2xl font-thin">{{ slice.name[$root.language] }}</h3>
-            <p class="font-semibold">{{ slice.description[$root.language] }}</p>
+            <p class="font-medium">{{ slice.description[$root.language] }}</p>
         </figcaption>
 
 
         <div v-if="slicePayload" class="grid grid-cols-3">
 
-            <div class="bg-sky-100  p-4 border-r-2 border-sky-900">
+            <div class="bg-sky-100  p-4 border-r-2 border-gray-300">
                 <CodeEditor v-model="slicePayload" mode="yaml"></CodeEditor>
             </div>
 

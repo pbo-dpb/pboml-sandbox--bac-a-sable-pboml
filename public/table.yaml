@@ -14,12 +14,12 @@ slices:
                     fr: 'Année fiscale'
                 type: markdown
                 display_label: false
+                is_time: true
             totalcost:
                 label:
                     en: 'Total cost'
                     fr: 'Coût total'
                 type: number
-                display_label: true
         content:
             -
                 fiscalyear:
