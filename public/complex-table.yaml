@@ -1,0 +1,270 @@
+pboml:
+    version: 1.0.0
+slices:
+    -
+        type: table
+        referenced_as:
+            en: 'Table 1'
+            fr: 'Tableau 1'
+        label:
+            en: 'Spending on salaries by selected departments'
+            fr: 'Dépenses salariales par ministère choisi '
+        sources:
+            -
+                en: 'Receiver General for Canada'
+                fr: 'Receveur général du Canada'
+            -
+                en: 'Office of the Parliamentary Budget Officer'
+                fr: 'Bureau du directeur parlementaire du budget'
+        content:
+            -
+                department:
+                    fr: 'Total du gouvernement'
+                    en: 'Total government'
+                total20162017: 27484
+                perfte20162017: 79473
+                total20172019: 29189
+                perfte20172018: 82354
+                total20182019: 30912
+                perfte20182019: 83956
+                total20192020: 32571
+                perfte20192020: 85240
+                total20202021: 34585
+                perfte20202021: 88498
+                total20212022: 37439
+                perfte20212022: 90578
+            -
+                department:
+                    fr: 'Ministère de la Défense nationale'
+                    en: 'Department of National Defense'
+                total20162017: 6719
+                perfte20162017: 75860
+                total20172019: 7075
+                perfte20172018: 78788
+                total20182019: 7358
+                perfte20182019: 80005
+                total20192020: 7580
+                perfte20192020: 81284
+                total20202021: 7760
+                perfte20202021: 85108
+                total20212022: 8018
+                perfte20212022: 88017
+            -
+                department:
+                    fr: 'Gendarmerie royale du Canada'
+                    en: 'Royal Canadian Mounted Police'
+                total20162017: 2362
+                perfte20162017: 80978
+                total20172019: 2476
+                perfte20172018: 83766
+                total20182019: 2559
+                perfte20182019: 85678
+                total20192020: 2617
+                perfte20192020: 84112
+                total20202021: 2658
+                perfte20202021: 85679
+                total20212022: 2909
+                perfte20212022: 93358
+            -
+                department:
+                    fr: 'Agence du revenu du Canada'
+                    en: 'Canadian Revenue Agency'
+                total20162017: 2668
+                perfte20162017: 68881
+                total20172019: 2941
+                perfte20172018: 73968
+                total20182019: 2973
+                perfte20182019: 71493
+                total20192020: 3078
+                perfte20192020: 73737
+                total20202021: 3658
+                perfte20202021: 84442
+                total20212022: 3840
+                perfte20212022: 76874
+            -
+                department:
+                    fr: 'Emploi et Développement social Canada'
+                    en: 'Employment Social Development Canada'
+                total20162017: 1463
+                perfte20162017: 67025
+                total20172019: 1563
+                perfte20172018: 68579
+                total20182019: 1632
+                perfte20182019: 68579
+                total20192020: 1751
+                perfte20192020: 70870
+                total20202021: 2009
+                perfte20202021: 70984
+                total20212022: 2372
+                perfte20212022: 73167
+            -
+                department:
+                    fr: 'Agence de la santé publique du Canada'
+                    en: 'Public Health Agency of Canada'
+                total20162017: 174
+                perfte20162017: 82062
+                total20172019: 179
+                perfte20172018: 86223
+                total20182019: 184
+                perfte20182019: 86223
+                total20192020: 203
+                perfte20192020: 88348
+                total20202021: 261
+                perfte20202021: 91165
+                total20212022: 384
+                perfte20212022: 88011
+            -
+                department:
+                    fr: 'Agence des services frontaliers du Canada'
+                    en: 'Canada Border and Services Agency'
+                total20162017: 972
+                perfte20162017: 71806
+                total20172019: 985
+                perfte20172018: 72797
+                total20182019: 1293
+                perfte20182019: 92703
+                total20192020: 1163
+                perfte20192020: 80353
+                total20202021: 1247
+                perfte20202021: 86644
+                total20212022: 1418
+                perfte20212022: 94146
+        variables:
+            department:
+                label:
+                    en: Department
+                    fr: Ministère
+                type: markdown
+                is_descriptive: true
+            total20162017:
+                label:
+                    en: Total
+                    fr: Total
+                type: number
+                group:
+                    en: 2016-2017
+                    fr: 2016-2017
+                unit:
+                    en: '$ millions'
+                    fr: 'Millions de $'
+            perfte20162017:
+                label:
+                    en: 'Per FTE'
+                    fr: 'Par ETP'
+                type: number
+                group:
+                    en: 2016-2017
+                    fr: 2016-2017
+                unit:
+                    en: $
+                    fr: $
+            total20172019:
+                label:
+                    en: Total
+                    fr: Total
+                type: number
+                group:
+                    en: 2017-2018
+                    fr: 2017-2018
+                unit:
+                    en: '$ millions'
+                    fr: 'Millions de $'
+            perfte20172018:
+                label:
+                    en: 'Per FTE'
+                    fr: 'Par ETP'
+                type: number
+                group:
+                    en: 2017-2018
+                    fr: 2017-2018
+                unit:
+                    en: $
+                    fr: $
+            total20182019:
+                label:
+                    en: Total
+                    fr: Total
+                type: number
+                group:
+                    en: 2018-2019
+                    fr: 2018-2019
+                unit:
+                    en: '$ millions'
+                    fr: 'Millions de $'
+            perfte20182019:
+                label:
+                    en: 'Per FTE'
+                    fr: 'Par ETP'
+                type: number
+                group:
+                    en: 2018-2019
+                    fr: 2018-2019
+                unit:
+                    en: $
+                    fr: $
+            total20192020:
+                label:
+                    en: Total
+                    fr: Total
+                type: number
+                group:
+                    en: 2019-2020
+                    fr: 2019-2020
+                unit:
+                    en: '$ millions'
+                    fr: 'Millions de $'
+            perfte20192020:
+                label:
+                    en: 'Per FTE'
+                    fr: 'Par ETP'
+                type: number
+                group:
+                    en: 2019-2020
+                    fr: 2019-2020
+                unit:
+                    en: $
+                    fr: $
+            total20202021:
+                label:
+                    en: Total
+                    fr: Total
+                type: number
+                group:
+                    en: 2020-2021
+                    fr: 2020-2021
+                unit:
+                    en: '$ millions'
+                    fr: 'Millions de $'
+            perfte20202021:
+                label:
+                    en: 'Per FTE'
+                    fr: 'Par ETP'
+                type: number
+                group:
+                    en: 2020-2021
+                    fr: 2020-2021
+                unit:
+                    en: $
+                    fr: $
+            total20212022:
+                label:
+                    en: Total
+                    fr: Total
+                type: number
+                group:
+                    en: 2021-2022
+                    fr: 2021-2022
+                unit:
+                    en: '$ millions'
+                    fr: 'Millions de $'
+            perfte20212022:
+                label:
+                    en: 'Per FTE'
+                    fr: 'Par ETP'
+                type: number
+                group:
+                    en: 2021-2022
+                    fr: 2021-2022
+                unit:
+                    en: $
+                    fr: $

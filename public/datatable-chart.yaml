@@ -1,0 +1,57 @@
+pboml:
+    version: 1.0.0
+slices:
+    -
+        type: chart
+        display_label: true
+        is_figure: false
+        label:
+            en: '5-Year Cost'
+            fr: 'Coût sur cinq ans'
+        datatable:
+          content:
+              -
+                  fiscalyear:
+                      en: 2021-22
+                      fr: 2021-2022
+                  totalcost: 0
+              -
+                  fiscalyear:
+                      en: 2022-23
+                      fr: 2022-2023
+                  totalcost: 1
+              -
+                  fiscalyear:
+                      en: 2023-24
+                      fr: 2023-2024
+                  totalcost: 3
+              -
+                  fiscalyear:
+                      en: 2024-25
+                      fr: 2024-2025
+                  totalcost: 6
+              -
+                  fiscalyear:
+                      en: 2025-26
+                      fr: 2025-2026
+                  totalcost: 9
+              -
+                  fiscalyear:
+                      en: Total
+                      fr: Total
+                  totalcost: 19
+                  skip_chart: true
+          variables:
+              fiscalyear:
+                  label:
+                      en: 'Fiscal Year'
+                      fr: 'Exercice financier'
+                  type: markdown
+                  readonly: true
+                  is_descriptive: true
+              totalcost:
+                  label:
+                      en: 'Total cost'
+                      fr: 'Coût total'
+                  type: number
+                  readonly: false

@@ -1,25 +1,41 @@
 [
     {
-        "name": {"en":"Markdown", "fr":"Markdown"},
+        "name": {
+            "en": "Markdown",
+            "fr": "Markdown"
+        },
         "description": {
             "en": "A block of text formatted with the markdown language.",
             "fr": "Un bloc de texte formaté avec le langage markdown."
         },
         "payload": "markdown.yaml"
     },
-
     {
-        "name": {"en":"Table", "fr":"Tableau"},
+        "name": {
+            "en": "Table",
+            "fr": "Tableau"
+        },
         "description": {
             "en": "A simple table with no merged cells.",
             "fr": "Un tableau simple sans cellules fusionnées."
         },
-        "payload": "table.yaml"
+        "payload": "simple-table.yaml"
     },
-
     {
         "name": {
-            "en":"Key-Value List", "fr":"Liste clé-valeur"
+            "en": "Table with grouped variables",
+            "fr": "Tableau à variables groupées"
+        },
+        "description": {
+            "en": "A complex table with merged cells.",
+            "fr": "Un tableau comples avec cellules fusionnées."
+        },
+        "payload": "complex-table.yaml"
+    },
+    {
+        "name": {
+            "en": "Key-Value List",
+            "fr": "Liste clé-valeur"
         },
         "description": {
             "en": "A list of associative items.",
@@ -27,15 +43,26 @@
         },
         "payload": "kvlist.yaml"
     },
-
     {
         "name": {
-            "en":"Graph", "fr":"Graphique"
+            "en": "Chart (primitive array)",
+            "fr": "Graphique (tableau primitif)"
+        },
+        "description": {
+            "en": "Visual representation of a primitive json array.",
+            "fr": "La représentation visuelle de données tabulaires d'un objet json primitif."
+        },
+        "payload": "arraytable-chart.yaml"
+    },
+    {
+        "name": {
+            "en": "Chart (data table)",
+            "fr": "Graphique (à tableau de données)"
         },
         "description": {
             "en": "Visual representation of tabular data.",
             "fr": "La représentation visuelle de données tabulaires."
         },
-        "payload": "graph.yaml"
+        "payload": "datatable-chart.yaml"
     }
 ]
